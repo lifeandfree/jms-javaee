@@ -1,0 +1,19 @@
+plugins {
+    id 'war'
+}
+
+group 'ru.innopolis'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'javax', name: 'javaee-web-api', version: '8.0.1'
+    implementation group: 'org.wildfly', name: 'wildfly-client-all', version: '18.0.1.Final'
+}
